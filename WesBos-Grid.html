@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Fundamentals!</title>
+</head>
+<style>
+    :root {
+        --yellow: #ffc600;
+        --black: #272727;
+    }
+
+    html {
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 900;
+        font-size: 10px;
+        color: var(--black);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    }
+
+    *,  
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        background-image: url("./images/topography.svg"),
+        linear-gradient(110deg, #f93d66, #6d47d9);
+        background-size: 340px, auto;
+        min-height: calc(100vh - 100px);
+        margin: 50px;
+        background-attachment: fixed;
+        letter-spacing: -1px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 0 5px 0;
+    }
+
+    .item {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid rgba(0, 0, 0, 0.03);
+        border-radius: 3px;
+        font-size: 35px;
+        background-color: var(--yellow);
+    }
+
+    .item p {
+        margin: 0 0 5px 0;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr 2fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item"> 1 </div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3 </div>
+        <div class="item"> 4 </div>
+        <div class="item"> 5 </div>
+        <div class="item"> 6 </div>
+        <div class="item"> 7 </div>
+        <div class="item"> 8 </div>
+        <div class="item"> 9 </div>
+        <div class="item"> 10 </div>
+        <div class="item"> 11 </div>
+        <div class="item"> 12 </div>
+        <div class="item"> 13 </div>
+        <div class="item"> 14 </div>
+        <div class="item"> 15 </div>
+        <div class="item"> 16 </div>
+        <div class="item"> 17 </div>
+        <div class="item"> 18 </div>
+        <div class="item"> 19 </div>
+        <div class="item"> 20 </div>
+    </div>
+</body>
+
+</html>
